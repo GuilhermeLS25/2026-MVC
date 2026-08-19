@@ -6,22 +6,80 @@
 <div class="container">
 
     <h1 class="text-center mt-3 fw-bold">Cadastro de Cliente</h1>
-    
+
     <form action="#" method="get">
-        <div class="row">
-            <div class="col-3">
-                <label asp-for="Id">Código</label>
-                <input type="number" 
-                        class="form-control" 
-                        placeholder="Código do Cliente..." 
-                        asp-for="Id">
+        <div class="col-12 col-sm-6 col-md-4 col-xl-3 pb-5">
+            <label asp-for="Id">Código</label>
+            <input type="number" class="form-control" placeholder="Código do Cliente..." asp-for="Id">
+        </div>
+        <div class="row col-sm-12">
+            <h4 class="border-bottom pb-2 mb-3">Informações de Contato</h4>
+            <div class="col-12 col-md-6 mb-3">
+                <label asp-for="Nome">Nome Completo...</label>
+                <input type="text" class="form-control" placeholder="Nome Completo..." asp-for="Nome">
             </div>
-            <div class="col">
-                <label asp-for="Nome">Nome Completo</label>
-                <input type="text" 
-                        class="form-control" 
-                        placeholder="Nome Completo..." 
-                        asp-for="Nome">
+            <div class="col-12 col-md-6 mb-3">
+                <label asp-for="Email">E-mail</label>
+                <input type="text" class="form-control" placeholder="Digite seu E-mail..." asp-for="Email">
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 mb-3">
+                <label asp-for="CPF">CPF</label>
+                <input type="text" class="form-control" placeholder="123.456.789-10" asp-for="CPF">
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 mb-3">
+                <label asp-for="DataNascimento">Data de Nascimento</label>
+                <input type="date" class="form-control" asp-for="DataNascimento">
+            </div>
+            <div class="col-12 col-md-12 col-lg-4 mb-3">
+                <label asp-for="Celular">Celular</label>
+                <input type="text" class="form-control" placeholder="(00) 1 2345-6789" asp-for="Celular">
+            </div>
+        </div>
+
+        <div class="row pt-5">
+            <h4 class="border-bottom pb-2 mb-3">Endereço</h4>
+
+            <div class="col-12 col-md-6 mb-3">
+                <label asp-for="CEP">CEP</label>
+                <input type="text" class="form-control" placeholder="00000-000" asp-for="CEP">
+            </div>
+            <div class="col-12 col-md-6 mb-3">
+                <label asp-for="Endereco">Endereço</label>
+                <input type="text" class="form-control" placeholder="Digite seu endereço completo" asp-for="Endereco">
+            </div>
+            <div class="col-12 col-sm-6 col-md-5 mb-3">
+                <label asp-for="Bairro">Bairro</label>
+                <input type="text" class="form-control" placeholder="Digite seu Bairro" asp-for="Bairro">
+            </div>
+            <div class="col-12 col-sm-6 col-md-5 mb-3">
+                <label asp-for="Cidade">Cidade</label>
+                <input type="text" class="form-control" placeholder="Digite sua cidade" asp-for="Cidade">
+            </div>
+            <div class="col-12 col-md-2 mb-3">
+                <label asp-for="UF">UF</label>
+                <select class="form-select" id="uf" name="uf">
+                    <option value="" disabled selected>Selecione</option>
+                    <option value="ES">ES</option>
+                    <option value="MG">MG</option>
+                    <option value="SP">SP</option>
+                    <option value="RJ">RJ</option>
+                    <!-- Adicione as outras opções de estados aqui -->
+                </select>
+            </div>
+        </div>
+
+        <div class="row pt-5">
+            <div class="">
+                <label asp-for="Observacao" class="align-bottom">Observação...</label>
+                <textarea class="col-12 h-100" id="observacao" placeholder="Escreva uma Observação aqui..."></textarea>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col text-center">
+                <input type="reset" value="Limpar" class="w-50 btn btn-outline-secondary" />
+            </div>
+            <div class="col text-center">
+                <input type="submit" value="Enviar" class="w-50 btn btn-primary" />
             </div>
         </div>
     </form>
