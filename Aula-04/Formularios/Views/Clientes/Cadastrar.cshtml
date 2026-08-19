@@ -15,16 +15,16 @@
         <div class="row col-sm-12">
             <h4 class="border-bottom pb-2 mb-3">Informações de Contato</h4>
             <div class="col-12 col-md-6 mb-3">
-                <label asp-for="Nome">Nome Completo...</label>
+                <label asp-for="Nome">Nome Completo</label>
                 <input type="text" class="form-control" placeholder="Nome Completo..." asp-for="Nome">
             </div>
             <div class="col-12 col-md-6 mb-3">
                 <label asp-for="Email">E-mail</label>
-                <input type="text" class="form-control" placeholder="Digite seu E-mail..." asp-for="Email">
+                <input type="email" class="form-control" placeholder="Digite seu E-mail..." asp-for="Email">
             </div>
             <div class="col-12 col-sm-6 col-lg-4 mb-3">
                 <label asp-for="CPF">CPF</label>
-                <input type="text" class="form-control" placeholder="123.456.789-10" asp-for="CPF">
+                <input type="text" class="form-control" placeholder="000.000.000-00" asp-for="CPF">
             </div>
             <div class="col-12 col-sm-6 col-lg-4 mb-3">
                 <label asp-for="DataNascimento">Data de Nascimento</label>
@@ -32,7 +32,7 @@
             </div>
             <div class="col-12 col-md-12 col-lg-4 mb-3">
                 <label asp-for="Celular">Celular</label>
-                <input type="text" class="form-control" placeholder="(00) 1 2345-6789" asp-for="Celular">
+                <input type="text" class="form-control" placeholder="(00) 0 0000-0000" asp-for="Celular">
             </div>
         </div>
 
@@ -69,8 +69,8 @@
 
         <div class="row pt-5">
             <div class="">
-                <label asp-for="Observacao" class="align-bottom">Observação...</label>
-                <textarea class="col-12 h-100" id="observacao" placeholder="Escreva uma Observação aqui..."></textarea>
+                <label asp-for="Observacao" class="align-bottom h5">Observação...</label>
+                <textarea class="col-12 h-100" id="observacao"></textarea>
             </div>
         </div>
         <div class="row mt-5">
