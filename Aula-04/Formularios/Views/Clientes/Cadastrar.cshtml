@@ -1,0 +1,29 @@
+@model MVC2026.Cliente
+@{
+    ViewData["Title"] = "Cadastro de Clientes";
+}
+
+<div class="container">
+
+    <h1 class="text-center mt-3 fw-bold">Cadastro de Cliente</h1>
+    
+    <form action="#" method="get">
+        <div class="row">
+            <div class="col-3">
+                <label asp-for="Id">Código</label>
+                <input type="number" 
+                        class="form-control" 
+                        placeholder="Código do Cliente..." 
+                        asp-for="Id">
+            </div>
+            <div class="col">
+                <label asp-for="Nome">Nome Completo</label>
+                <input type="text" 
+                        class="form-control" 
+                        placeholder="Nome Completo..." 
+                        asp-for="Nome">
+            </div>
+        </div>
+    </form>
+
+</div>
